@@ -1,15 +1,44 @@
 const HomePage: React.FC = () => {
     return (
-        <div>
-            <h1 className="text-h1 text-primary-500">AutoRepo Heading 1</h1>
-            <h2 className="text-h2 text-primary-400">AutoRepo Heading 2</h2>
-            <h3 className="text-h3 text-primary-300">AutoRepo Heading 3</h3>
-            <h4 className="text-h4 text-secondary-500">AutoRepo Heading 4</h4>
-            <h5 className="text-h5 text-secondary-400">AutoRepo Heading 5</h5>
-            <h6 className="text-h6 text-neutral-700">AutoRepo Heading 6</h6>
-            <p className="text-sub1 text-neutral-500">AutoRepo Subtitle 1</p>
-            <p className="text-sub2 text-error-500">AutoRepo Subtitle 2</p>
-            <p className="text-sub3 text-error-700">AutoRepo Subtitle 3</p>
+        <div className="flex flex-col items-center text-center py-20 bg-gray-50 mt-20 px-8 w-lvw">
+            <h1 className="text-4xl font-bold text-neutral-900 mb-4">
+                Github Repo의 모든 것
+            </h1>
+            <p className="text-lg text-neutral-700 mb-8">
+                깃허브 프로젝트 초기세팅 이제 편하고 빠르게 하자!
+                <br />
+                3분 1초를 통해서 초기세팅을 빠르고 간편하게 시작해보세요!
+            </p>
+            <div className="flex space-x-4 mb-20">
+                <button className="px-6 py-3 bg-neutral-900 text-white font-semibold rounded-lg hover:bg-neutral-700">
+                    바로 시작하기
+                </button>
+                <button className="px-6 py-3 border border-neutral-900 text-neutral-900 font-semibold rounded-lg hover:bg-neutral-100">
+                    템플릿 구성하기
+                </button>
+            </div>
+            <div className="flex space-x-8 max-w-4xl my-10">
+                <img
+                    src="/image1.png"
+                    alt="Image 1"
+                    className="w-40 h-40 object-cover rounded-md"
+                />
+                <img
+                    src="/image1.png"
+                    alt="Image 2"
+                    className="w-40 h-40 object-cover rounded-md"
+                />
+                <img
+                    src="/image1.png"
+                    alt="Image 3"
+                    className="w-40 h-40 object-cover rounded-md"
+                />
+                <img
+                    src="/image1.png"
+                    alt="Image 4"
+                    className="w-40 h-40 object-cover rounded-md"
+                />
+            </div>
         </div>
     );
 };
