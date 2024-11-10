@@ -2,6 +2,8 @@ import '../src/app/styles/reset.css';
 import '../src/app/styles/globals.css';
 
 import localFont from 'next/font/local';
+import Navigation from '@widgets/layout/Navigation';
+import Footer from '@widgets/layout/Footer';
 
 export const metadata = {
     title: 'AutoRepo',
@@ -32,9 +34,11 @@ export default function RootLayout({
     return (
         <html lang="ko">
             <body
-                className={`${pretendardRegular.variable} bg-neutral-100 antialiased w-4/5 mx-auto flex flex-col items-center text-center mt-10`}
+                className={`${pretendardRegular.variable} bg-neutral-100 antialiased w-4/5 mx-auto flex flex-col items-center text-center `}
             >
+                <Navigation />
                 {children}
+                <Footer />
             </body>
         </html>
     );
