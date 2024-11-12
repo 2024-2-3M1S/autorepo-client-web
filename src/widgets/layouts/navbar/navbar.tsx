@@ -25,8 +25,8 @@ const Navbar = () => {
         {
             label: '템플릿 생성',
             subItems: [
-                { label: 'Issue 템플릿', link: '/template-issue' },
-                { label: 'PR 템플릿', link: '/template-pr' },
+                { label: 'Issue', link: '/template-issue' },
+                { label: 'PR', link: '/template-pr' },
             ],
         },
         { label: 'ReadMe 생성', link: '/read-me' },
