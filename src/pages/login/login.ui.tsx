@@ -23,9 +23,13 @@ const LoginPage = (): ReactElement => {
                 if (code) {
                     try {
                         const tokens = await authService.handleCallback(code);
+                        const { accessToken, refreshToken } = tokens.data;
 
-                        if (tokens.accessToken && tokens.refreshToken) {
-                            authService.setTokens(tokens);
+                        if (accessToken && refreshToken) {
+                            authService.setTokens({
+                                accessToken,
+                                refreshToken,
+                            });
                             setIsLoggedIn(true);
                             router.push('/');
                         }
