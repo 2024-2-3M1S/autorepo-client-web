@@ -1,4 +1,4 @@
-import Separator from '@shared/components/separator';
+import Separator from '@shared/components/common/separator';
 import { IconInstagram, IconKakao } from 'public/svgs';
 
 export default function Footer() {
